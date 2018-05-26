@@ -16,9 +16,9 @@
                 <th>Comentario</th>
                 <th>Usuario</th>
             </tr>
-            <tr th:each="post : ${post}">
+            <tr th:each="post : ${posts}">
                 <td th:text="${post.comentario}"><a href="/post/${post.comenario}">Comentario</a></td>
-                <td th:text="${post.usuario}"><a href="/post/${post.usuario}">Usuario</a></td>
+                <td th:text="${post.usuarioId}"><a href="/post/${post.usuarioId}">UsuarioId</a></td>
                 <td><a th:href="${ '/post/' + post.id}">View</a></td>
                 <td><a th:href="${'/post/edit/' + post.id}">Edit</a></td>
                 <td><a th:href="${'/post/delete/' + post.id}">Delete</a></td>
