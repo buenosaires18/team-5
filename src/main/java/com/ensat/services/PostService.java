@@ -9,8 +9,6 @@ public interface PostService {
 	
 	void save(Post p);
 
-	List<Post> SelectAllPosts();
-
 	Iterable<Post> listAllPosts();
 
 	Post getPostById(Integer id);

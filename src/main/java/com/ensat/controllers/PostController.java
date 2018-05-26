@@ -30,8 +30,8 @@ public class PostController {
      */
     @RequestMapping(value = "/posts", method = RequestMethod.GET)
     public String list(Model model) {
-        model.addAttribute("post", postService.listAllPosts());
-        System.out.println("Returning rposts:");
+        model.addAttribute("posts", postService.listAllPosts());
+        System.out.println("Returning posts:");
         return "posts";
     }
 
