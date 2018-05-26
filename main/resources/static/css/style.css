@@ -88,3 +88,10 @@ background: #ffff;
 .busqueda{
 	width: 100px;
 }
+.rcorners{
+    background: #E86C26;
+    width: 90%;
+	height: 40px;    
+	color:#FFF;
+
+}
