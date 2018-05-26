@@ -1,8 +1,8 @@
-package Services;
+package com.ensat.services;
 
 import java.util.List;
 
-import Clases.Post;
+import com.ensat.entities.Post;
 
 public interface PostService {
 	

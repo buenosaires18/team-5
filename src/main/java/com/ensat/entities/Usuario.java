@@ -1,4 +1,4 @@
-package Clases;
+package com.ensat.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
