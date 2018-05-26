@@ -28,12 +28,12 @@ public class PostController {
      * @param model
      * @return
      */
-    /*@RequestMapping(value = "/posts", method = RequestMethod.GET)
+    @RequestMapping(value = "/posts", method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("post", postService.listAllPosts());
         System.out.println("Returning rposts:");
         return "posts";
-    }*/
+    }
 
     /**
      * View a specific product by its id.
@@ -42,30 +42,29 @@ public class PostController {
      * @param model
      * @return
      */
- /*   @RequestMapping("post/{id}")
+    @RequestMapping("post/{id}")
     public String showProduct(@PathVariable Integer id, Model model) {
         model.addAttribute("post", postService.getPostById(id));
         return "postshow";
-    }*/
+    }
 
     // Afficher le formulaire de modification du Product
-  /*  @RequestMapping("post/edit/{id}")
+    @RequestMapping("post/edit/{id}")
     public String edit(@PathVariable Integer id, Model model) {
         model.addAttribute("post", postService.getPostById(id));
         return "postform";
     }
-*/
     /**
      * New product.
      *
      * @param model
      * @return
      */
-  /*  @RequestMapping("post/new")
+    @RequestMapping("post/new")
     public String newProduct(Model model) {
         model.addAttribute("post", new Post());
         return "postform";
-    }*/
+    }
 
     /**
      * Save product to database.
@@ -73,11 +72,11 @@ public class PostController {
      * @param post
      * @return
      */
- /*   @RequestMapping(value = "post", method = RequestMethod.POST)
+    @RequestMapping(value = "post", method = RequestMethod.POST)
     public String saveProduct(Post post) {
         postService.savePost(post);
         return "redirect:/posts/" + post.getId();
-    }*/
+    }
 
     /**
      * Delete product by its id.
@@ -85,10 +84,10 @@ public class PostController {
      * @param id
      * @return
      */
- /*   @RequestMapping("post/delete/{id}")
+    @RequestMapping("post/delete/{id}")
     public String delete(@PathVariable Integer id) {
         postService.deletePost(id);
         return "redirect:/posts";
-    }*/
+    }
 
 }
