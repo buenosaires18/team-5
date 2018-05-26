@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="..\static\css\style.css" rel="stylesheet">    
+    <link href="" rel="stylesheet"/>
+    <link rel="stylesheet" href="/resources/demos/style.css"> 
+  <script>
+    function clicker() {
+    alert('Gracias por completar la encuesta')
+  }
+</script>
+
+    <title>Pescar</title>
+  </head>
+<nav id="sidebar">
+            <div class="list-group">
+            <a href="#" class="list-group-item active">Perfil</a>
+            <a href="#" class="list-group-item">Buscar</a>
+            <a href="#" class="list-group-item">Encuestas</a>
+            <a href="#" class="list-group-item">Correos</a>
+            <a href="#" class="list-group-item">Mis Preguntas</a>
+            <a href="#" class="list-group-item">Mis foros</a>
+            <a href="#">
+            <div>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text"; style="width:240px;"  placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" 
+                  type="submit">Buscar</button>
+                </form>
+            </a>
+          </div>
+        </div>
+    </nav>
+
+  <body style="align-content:right">
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-12 col-md-12">
+          <p class="float-right hidden-md-up">
+          </p>
+          <div class="jumbotron">
+            <h1>Encuesta de Seguimiento</h1>
+          </div>
+          <div class="row">
+<form class="container" method="POST" autocomplete="off">
+<label>¿Estudia?</label>
+<select>
+<option value="SÍ">SÍ</option>
+<option value="NO">NO</option>
+</select>
+<br>
+<label>¿Qué carrera?</label>
+<input placeholder="Ingrese carrera"></input>
+<br>
+<label>¿Dónde?</label>
+<input placeholder="Ingrese institución"></input>
+<br>
+<label>¿Se encuentra buscando trabajo actualmente?</label>
+<select>
+<option value="SÍ">SÍ</option>
+<option value="NO">NO</option>
+</select>
+<br>
+<label>¿Cuál es su disponibilidad?</label>
+<select>
+<option value="MAÑANA">MAÑANA</option>
+<option value="TARDE">TARDE</option>
+<option value="NOCHE">NOCHE</option>
+</select>
+<br>
+<label>¿Trabaja actualmente?</label>
+<select>
+<option value="SÍ">SÍ</option>
+<option value="NO">NO</option>
+</select>
+<br>
+<label>¿Dónde?</label>
+<input placeholder="Ingrese organización"></input>
+<br>
+<label>¿Cuál es el tipo de contratación?</label>
+<select>
+<option value="BLANCO">BLANCO</option>
+<option value="NEGRO">NEGRO</option>
+<option value="CHANGAS">CHANGAS</option>
+</select>
+<br>
+    <button value="Cargar" onClick="clicker()" action="/templates/usuariologueado" style="background:#003399;" color:FFFF#;" class="btn btn-lg btn-primary" type="submit">Enviar Búsqueda</button> 
+</form>
+            
+          </div><!--/row-->
+        </div><!--/span-->
+
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="offcanvas.js"></script>
+  </body>
+</html>
