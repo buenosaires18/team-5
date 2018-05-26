@@ -10,7 +10,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-  align-items: center;
+  /*align-items: center;*/
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
@@ -44,4 +44,47 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+#cuadroBusqueda{
+	height:500px;
+	background:#E86C26;  
+	line-height: 32px
+	font-family: 'Tajawal';
+	font-weight: 50px;
+	padding-left:50px;
+	padding-top: 10px;
+    overflow: auto;
+}
+.form-busqueda{
+margin-left: 100px;	
+width: 500px;
+}
+.form-busqueda  button{
+	width: 300px;
+}
+.form-busqueda textarea{
+	color:#003399;
+}
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+footer {
+  padding: 30px;
+background: #ffff;  
+}
+#sidebar{
+	margin-top: 11px; 
+	width: 250px;
+	height:1000px;
+	background: #ffff;
+	
+}
+.busqueda{
+	width: 100px;
 }
