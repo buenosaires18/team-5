@@ -7,17 +7,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "ofertas")
+//@Entity
+//@Table(name = "ofertas")
 public class Oferta {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(nullable=false)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+//	@Column(nullable=false)
 	private int ID;
-	@Column(nullable=false)
+//	@Column(nullable=false)
 	private String titulo;
-	@Column(nullable=false)
+//	@Column(nullable=false)
 	private String descripcion;
 	
 	public Oferta(String titulo, String descripcion) {

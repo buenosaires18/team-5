@@ -1,35 +1,27 @@
 package com.ensat.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.Version;
 
 @Entity
-@Table(name = "posts")
+//@Table(name = "posts")
 public class Post {
 
 	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	@Column(nullable = false)
+	@GeneratedValue (strategy = GenerationType.AUTO)
+//	@Column(nullable = false)
 	private int id;
-	@Column(nullable = false)
+
+
+
+	@Version
+	private Integer version;
 	private String comentario;
-	@OneToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "dni")
-	@Column(nullable = false)
-	private Usuario usuario;
-	
-	public Post(String comentario, Usuario usuario) {
-		super();
-		this.comentario = comentario;
-		this.usuario = usuario;
-	}
+	private Integer usuarioId;
+
 
 	public int getId() {
 		return id;
@@ -37,6 +29,14 @@ public class Post {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
 	}
 
 	public String getComentario() {
@@ -47,12 +47,13 @@ public class Post {
 		this.comentario = comentario;
 	}
 
-	public Usuario getUsuario() {
-		return usuario;
+	public Integer getUsuarioId() {
+		return usuarioId;
 	}
 
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
+	public void setUsuarioId(Integer usuarioId) {
+		this.usuarioId = usuarioId;
 	}
+
 
 }
