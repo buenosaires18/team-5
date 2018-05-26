@@ -17,11 +17,6 @@ public class PostServiceImpl implements PostService {
 		this.postRepository.save(post);
 	}
 
-	@Override
-	public List<Post> SelectAllPosts() {
-
-		return (ArrayList) this.postRepository.findAll();
-	}
 
 	@Override
 	public Iterable<Post> listAllPosts() {
