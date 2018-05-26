@@ -4,10 +4,20 @@ import java.util.List;
 
 import com.ensat.entities.Post;
 
+
 public interface PostService {
 	
-	public void save(Post p);
-	
-	public List<Post> SelectAllPosts();
+	void save(Post p);
+
+	List<Post> SelectAllPosts();
+
+	Iterable<Post> listAllPosts();
+
+	Post getPostById(Integer id);
+
+	Post savePost(Post product);
+
+	void deletePost(Integer id);
+
 
 }
