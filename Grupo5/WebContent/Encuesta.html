@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+.container {
+	width: 307px;
+	height: 750px;
+	position: relative;
+	left: 100px;
+	top: 10px;
+}
+
+label {
+	color: Black;
+	font-weight: bold;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: flex;
+	margin: 10px 1px;
+}
+
+input {
+	width: 200px;
+}
+
+.boton {
+	border: 1px solid LightGrey;
+	padding: 8px 5px;
+	margin: 8px 5px;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	font-family: Calibri, Arial, sans-serif;
+	width: 100px;
+	left: 150px;
+	bottom: 1000px;
+	top: 60px;
+	border: 1px solid green;
+	border-radius: 5px;
+    background: green;
+	color: white;
+	display: inline;
+	text-transform: uppercase;
+}
+
+.boton:hover {
+	background: white;
+	border: 1px solid green;
+	color: green;
+}
+</style>
+
+<script>
+  function clicker() {
+	alert('Gracias por completar la encuesta')
+}
+</script>
+
+</head>
+<body>
+
+<h1>Encuesta</h1>
+
+<form class="container" method="POST" autocomplete="off">
+<label>¿Estudia?</label>
+<select>
+<option value="SÍ">SÍ</option>
+<option value="NO">NO</option>
+</select>
+
+<label>¿Qué carrera?</label>
+<input placeholder="Ingrese carrera"></input>
+
+<label>¿Dónde?</label>
+<input placeholder="Ingrese institución"></input>
+
+<label>¿Se encuentra buscando trabajo actualmente?</label>
+<select>
+<option value="SÍ">SÍ</option>
+<option value="NO">NO</option>
+</select>
+
+<label>¿Cuál es su disponibilidad?</label>
+<select>
+<option value="MAÑANA">MAÑANA</option>
+<option value="TARDE">TARDE</option>
+<option value="NOCHE">NOCHE</option>
+</select>
+
+<label>¿Trabaja actualmente?</label>
+<select>
+<option value="SÍ">SÍ</option>
+<option value="NO">NO</option>
+</select>
+
+<label>¿Dónde?</label>
+<input placeholder="Ingrese organización"></input>
+
+<label>¿Cuál es el tipo de contratación?</label>
+<select>
+<option value="BLANCO">BLANCO</option>
+<option value="NEGRO">NEGRO</option>
+<option value="CHANGAS">CHANGAS</option>
+</select>
+
+<input class="boton" value="Cargar" onClick="clicker()" action="/templates/usuariologueado">
+</form>
+
+</body>
+</html>
